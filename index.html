@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloudinary Upload Practice</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="upload-card">
+        <h1>Subir Imagen a la Nube</h1>
+        <p class="subtitle">Práctica de APIs de Plataformas</p>
+
+        <section class="upload-controls">
+            <input type="file" id="file-input" accept="image/*" aria-label="Seleccionar imagen">
+            
+            <div class="drop-zone">
+                <div id="loading-container" class="loading">
+                    <span class="spinner"></span>
+                    <p id="loading-text">Subiendo archivo, por favor espera...</p>
+                </div>
+                <img id="preview" src="" alt="Previsualización">
+                <p id="placeholder-text">La previsualización aparecerá aquí</p>
+            </div>
+
+            <button id="upload-btn">Subir a Cloudinary</button>
+        </section>
+
+        <section id="result-container">
+            <p id="status-message" role="alert"></p>
+            <p id="url-display" style="word-break: break-all; margin-top: 10px; font-size: 0.8rem;"></p>
+        </section>
+    </main>
+
+    <script src="main.js"></script>
+</body>
+</html>
